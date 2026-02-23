@@ -95,3 +95,30 @@ This tool is intended **ONLY** for:
 ```bash
 sudo apt-get update
 sudo apt-get install python3-pip libpcap-dev
+
+# Clone the repository
+git clone https://github.com/yourusername/Network-Packet-Analyzer.git
+cd Network-Packet-Analyzer
+
+# (Optional) Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+#### Verify Installation
+# Run with appropriate privileges
+# On Linux/macOS:
+sudo python src/cli.py --info
+
+# On Windows (run as Administrator):
+python src/cli.py --info
+
+####Capture 10 Packets
+sudo python src/cli.py --count 10
+###Capture with Filter (HTTP traffic only)
+sudo python src/cli.py --filter "tcp port 80" --count 5
+
+
+
