@@ -97,8 +97,8 @@ sudo apt-get update
 sudo apt-get install python3-pip libpcap-dev
 
 # Clone the repository
-git clone https://github.com/yourusername/Network-Packet-Analyzer.git
-cd Network-Packet-Analyzer
+git clone https://github.com/mrblue24390/PRODIGY_CS_05.git
+cd PRODIGY_CS_05
 
 # (Optional) Create virtual environment
 python -m venv venv
@@ -110,15 +110,15 @@ pip install -r requirements.txt
 #### Verify Installation
 # Run with appropriate privileges
 # On Linux/macOS:
-sudo python src/cli.py --info
+sudo python code.py --info
 
 # On Windows (run as Administrator):
-python src/cli.py --info
+python code.py --info
 
 ####Capture 10 Packets
-sudo python src/cli.py --count 10
+sudo python code.py --count 10
 ###Capture with Filter (HTTP traffic only)
-sudo python src/cli.py --filter "tcp port 80" --count 5
+sudo python code.py --filter "tcp port 80" --count 5
 
 
 
